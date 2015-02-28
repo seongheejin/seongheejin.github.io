@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+             width: 100px;
+             height: 100px;
+             background-color: red;
+             transform: scale(1);
+             -webkit-transform: scale(1);
+             transition: all 0.2s;
+         }
+
+        div.small {
+            transform: scale(0.2);
+            -webkit-transform: scale(0.2);
+        }
+    </style>
+</head>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<body>
+<div class="small"></div>
+<div class="small"></div>
+<script>
+    $(document).ready(function () {
+      $('div').removeClass('small');
+    })
+</script>
+</body>
+</html>

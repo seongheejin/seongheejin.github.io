@@ -1,0 +1,232 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    min-height:100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* 여기서부터 시작 */
+body {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    font-size: 18px;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 30px;
+}
+
+header.major {
+    z-index: 2;
+}
+
+header.major a {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+section {
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+section ul {
+    padding: 100px 0 20px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+section ul li {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+
+
+section ul li:nth-child(1) {
+    background: url("images/thum_02.png");
+    background-size: 100%;
+}
+
+section ul li:nth-child(2) {
+    background: url("images/thum_05.png");
+    background-size: 100%;
+}
+
+section ul li:nth-child(3) {
+    background: url("images/thum_11.png");
+    background-size: 100%;
+}
+
+section ul li:nth-child(4) {
+    background: url("images/thum_18.png");
+    background-size: 100%;
+}
+
+
+section ul li .dim {
+    background-color: yellow;
+    position:relative;
+    font-size:16px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+section ul li .dim p{
+    position:absolute;
+    width:250px;
+    height:50px;
+    text-align: center;
+    left:0;
+    top:50%;
+}
+
+section ul li:hover .dim {
+    opacity: 0.8;
+}
+
+section.major ul li{
+    width:250px;
+    height:250px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all 0.3s;
+}
+
+section.major ul li.small {
+    transform: scale(0.2);
+    -webkit-transform: scale(0.2);
+}
+
+body.major {
+    z-index: 1;
+}
+
+aside {
+    background-color: yellow;
+    top: 0;
+    left: -300px;
+    width: 200px;
+    height: 100%;
+    padding: 50px;
+    position: absolute;
+    z-index: 3;
+    transition: left 0.2s;
+}
+
+body.show-menu {
+    overflow: hidden;
+}
+
+body.show-menu aside {
+    left: 0px;
+}
+
+body.show-menu section {
+    left: 300px;
+}
+
+aside ul {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+aside ul li:hover a {
+    font-weight: bold;
+}
+
+aside div.me {
+    border-top: 1px solid #000000;
+    font-size: 13px;
+    line-height: 180%;
+    margin-top: 100px;
+    padding-top: 25px;
+
+}
+
+aside div.me h1 {
+    font-weight: bold;
+}
+
+aside div.me .close{
+    position:absolute;
+    right:0;
+    top:0;
+    padding:20px;
+}
+
+footer {
+    padding-bottom: 20px;
+    font-size: 11px;
+    color: lightgrey;
+    text-align: center;
+}

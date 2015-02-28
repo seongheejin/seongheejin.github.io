@@ -1,1 +1,0 @@
-# seongheejin.github.io
