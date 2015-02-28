@@ -92,17 +92,13 @@ section.major .cont{
     background-color: #F6F6F6;
     margin:0 auto;
     padding:100px 50px 50px 50px;
-    width:700px;
+    max-width:700px;
     font-size:11px;
     line-height: 130%;
 }
 section.major .cont img{
     width:100%;
     margin-bottom: 10px;
-}
-section ul li:nth-child(12) {
-    background: url("images/img_06.png");
-    background-size: 100%;
 }
 section.major .cont h1{
     margin-top:20px;
