@@ -86,6 +86,8 @@ header.major a {
     top: 30px;
 }
 section {
+    margin:0 auto;
+    width:800px;
     position: relative;
     z-index: 1;
     transition: 0.2s;
