@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
@@ -264,4 +265,134 @@ footer {
     font-size: 11px;
     color: lightgrey;
     text-align: center;
+=======
+.bg {
+    background-color: white;
+}
+
+header.major {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    padding: 50px 0;
+    z-index: 2;
+}
+
+header.major button {
+    top: 10px;
+    left: 50px;
+    position: absolute;
+}
+
+img {
+    background-color: red;
+}
+
+section.major {
+    display: flex;
+    display: -webkit-flex;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+section.major .container {
+    min-width: 1024px;
+    min-height: 760px;
+    margin: 0 auto;
+}
+
+section.major ul {
+    position: relative;
+}
+
+section.major ul li {
+    position: absolute;
+}
+
+section.major ul li:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 500px;
+    background-color: red;
+}
+section.major ul li:nth-child(2) {
+    left: 260px;
+    top: 0;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(3) {
+    left: 520px;
+    top: 0;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(4) {
+    left: 780px;
+    top: 0;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(5) {
+    left: 260px;
+    top: 260px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(6) {
+    left: 520px;
+    top: 260px;
+    width: 500px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(7) {
+    left: 0px;
+    top: 520px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(8) {
+    left: 260px;
+    top: 520px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(9) {
+    left: 520px;
+    top: 520px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+section.major ul li:nth-child(10) {
+    left: 780px;
+    top: 520px;
+    width: 240px;
+    height: 240px;
+    background-color: blue;
+}
+aside {
+    top: 0;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+}
+footer{
+    width:100%;
+    height:50px;
+>>>>>>> main.css
 }
