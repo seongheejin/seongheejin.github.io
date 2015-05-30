@@ -111,7 +111,7 @@ aside {
     width: 200px;
     height: 100%;
     padding:50px;
-    position: absolute;
+    position: fixed;
     z-index: 0;
     display:none;
 }
@@ -125,7 +125,7 @@ aside ul li:hover a{
 aside div.me{
     font-size:13px;
     line-height: 120%;
-    margin-top:80px;
+    margin-top: 40px;
 
 }
 
