@@ -58,7 +58,7 @@ q:before, q:after {
     content: none;
 }
 
-/* �ш린�쒕��� �쒖옉 */
+/* 여기서부터 시작 */
 body {
     position: relative;
 }
@@ -207,13 +207,13 @@ body.major {
 }
 
 aside {
-    background-color: red;
+    background-color: yellow;
     top: 0;
     left: -300px;
     width: 200px;
     height: 100%;
     padding: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     transition: left 0.2s;
 }
